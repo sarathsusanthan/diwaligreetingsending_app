@@ -14,20 +14,20 @@
         <img class="navbar-brand" id="brand" src="/images/diwali.jpg" alt="logo">
         <h1 style="margin-left: 20%; " class="my-3">DIWALI GREETINGS APP</h1>
     </nav>
-    <div style="text-align: center;" class="contaner ">
-       <div style="margin-top:7%;margin-left: 5%;" >
-        <form style="width: 40%;height: 50px;" action="/new" onsubmit="return check()" method="GET">
-            <input style="width: 80%; height: 100%;border-radius: 7px; "  id="nam" name="name" type="text" placeholder="Type Your Name">
-            <button style="height: 100%;border-radius: 7px;" id="bt" class="mx-2"  type="submit">continue</button><br>
-            <h3 id="msg"></h3></form>
-            
-       </div>
-     
-        
+    <div style="text-align: center;font-family: monospace;color: rgb(9, 10, 10);" class="contaner">
+       <h1>WELCOME <%=data.name%><br> <i>may the devine light of diwali spread into your life <br>peace,prosperity, pleasure & good health</i></h1>
+      <i><h1 style="color: rgb(255, 14, 14); background-color: rgba(10, 9, 8, 0.74);">send greetings to your dear ones here</h1></i> 
             
     </div>
    
- 
+    <div style=" text-align: center; width: 100%; margin-top: 5%; ">
+        <form style="width: 100%;" action="/greet" method="GET" onsubmit="return validate()">
+            <input style="width: 37%; border-radius: 7px;" id="rnam" type="text" name="name" placeholder="Type the name of recipient"> <br><br>
+            <input style="width: 37%; border-radius: 7px;"id="em" type="text" name="email" placeholder="Type email id of recipient"><br><br>
+            <button style="width: 10%; border-radius: 7px;" type="submit">submit</button><br><br>
+            <h3 id="error"></h3>
+        </form>
+    </div>
   
     <script src="/js/diwali.js"></script>
 </body>

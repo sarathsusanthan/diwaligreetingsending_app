@@ -4,8 +4,9 @@ body{
     background-repeat: no-repeat;
 }
 #nav{
-    color: red;
-    background-color: rgb(184, 187, 8);
+    color: rgba(252, 239, 239, 0.815);
+    background-color: rgba(11, 12, 14, 0.671);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #brand{
     width: 8%;
@@ -16,7 +17,7 @@ body{
     background-color: white;
 }
 #bt:hover{
-    border: 2px solid white;
+    
     
     font-weight: bold;
 }

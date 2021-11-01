@@ -2,12 +2,23 @@ function check(){
     var nam= document.getElementById("nam").value;
     var msg=document.getElementById("msg");
     if(nam.trim()==""){
-        msg.innerHTML="Enter your name";
-        msg.style.color="white";
-        msg.style.backgroundColor="black";
+        for(var i=0;i<5;i++){
+            for(var j=0;j<2;j++){
+                msg.innerHTML="Please enter your name";
+               msg.style.color="black";
+            }
+                for(var t=0;t<2;t++){
+                    msg.innerHTML="";
+                }
+        
+         
+        }
+        msg.innerHTML="Please enter your name";
+        msg.style.color="black";
+       
         return false;
     }else{
-        msg.innerHTML=`WELCOME ${nam}<br> <i>may the devine light of diwali spread into your life <br>peace,prosperity, pleasure & good health</i>`;
+        
         return true;
     }
 }
@@ -37,4 +48,7 @@ function show(){
     var n=document.getElementById("namam").value;
     var e=document.getElementById("emai").value;
     alert("Greetings sent to "+n+" at "+e);
+}
+function s(){
+    
 }

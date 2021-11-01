@@ -29,6 +29,13 @@ app.get('/greet', (req,res)=>{
     }
     res.render('greet',{data})
 })
+app.get('/new', (req,res)=>{
+    
+    var data={
+        name:req.query.name
+    }
+    res.render('new',{data})
+})
 app.post('/greet',(req,res)=>{
     let transporter = nodemailer.createTransport({
     service:'hotmail',

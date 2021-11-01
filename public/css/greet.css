@@ -100,3 +100,13 @@ h1 span
     font-size: 80px;
     font-family: 'Courier New', Courier, monospace;
 }
+#bt{
+    color:black;
+    background-color: white;
+}
+#bt:hover{
+    
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
